@@ -29,8 +29,6 @@ public class Supplier extends Agent {
                                 Logger.logSupply(getLocalName() + ": Restocked " + type);
                                 SupplyRequestQueue.markRestockComplete(type);
                             }
-
-                            // Send confirmation back to Barista
                             ACLMessage confirm = msg.createReply();
                             confirm.setPerformative(ACLMessage.CONFIRM);
                             confirm.setContent("SUPPLY_DONE");
@@ -42,7 +40,6 @@ public class Supplier extends Agent {
                 }
             }
         });
-
     }
 
     public static boolean isRestocking(){
