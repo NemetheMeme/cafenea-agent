@@ -23,6 +23,7 @@ public class Main {
             cc.createNewAgent("barista1", "try_2.agents.Barista", null).start();
             cc.createNewAgent("barista2", "try_2.agents.Barista", null).start();
             cc.createNewAgent("supplier", "try_2.agents.Supplier", null).start();
+            cc.createNewAgent("menuAgent", "try_2.agents.MenuAgent", null).start();
 
             SwingUtilities.invokeLater(() -> {
                 new CoffeeOrderGUI(orderManager);
