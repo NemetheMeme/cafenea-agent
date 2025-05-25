@@ -5,6 +5,7 @@ import jade.core.ProfileImpl;
 import jade.wrapper.AgentController;
 import jade.wrapper.ContainerController;
 import try_2.client.CoffeeOrderGUI;
+import try_2.client.MenuGUI;
 import try_2.client.SupplyStatusGUI;
 import try_2.client.MessageLoggerGUI;
 
@@ -29,14 +30,9 @@ public class Main {
                 new CoffeeOrderGUI(orderManager);
                 MessageLoggerGUI.getInstance();
                 SupplyStatusGUI.getInstance();
-
                 JFrame orderFrame = (JFrame) JFrame.getFrames()[0];
                 JFrame messageFrame = (JFrame) JFrame.getFrames()[1];
                 JFrame supplyFrame = (JFrame) JFrame.getFrames()[2];
-
-                orderFrame.setLocation(0, 0);
-                messageFrame.setLocation(0, 200);
-                supplyFrame.setLocation(0, 400);
             });
 
 

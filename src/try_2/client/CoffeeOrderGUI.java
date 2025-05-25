@@ -15,6 +15,7 @@ public class CoffeeOrderGUI extends JFrame {
 
         setTitle("Coffee Shop Order Panel");
         setSize(700, 170);
+        setLocation(50, 500);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLayout(new GridLayout(3, 1));
 

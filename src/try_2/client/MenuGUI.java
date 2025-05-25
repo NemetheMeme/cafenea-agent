@@ -19,7 +19,7 @@ public class MenuGUI extends JFrame {
         int chatViewHeight = 200;
         setTitle("Coffee Menu");
         setSize(400, buttonViewHeight + chatViewHeight);
-        setLocationRelativeTo(null);
+        setLocation(750,500);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLayout(new BorderLayout());
 

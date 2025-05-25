@@ -10,6 +10,7 @@ public class SupplyStatusGUI {
     private SupplyStatusGUI() {
         JFrame frame = new JFrame("Supply & Barista Status");
         frame.setSize(500, 400);
+        frame.setLocation(600, 50);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setLayout(new BorderLayout());
 

@@ -10,6 +10,7 @@ public class MessageLoggerGUI {
     private MessageLoggerGUI() {
         JFrame frame = new JFrame("System Message Log");
         frame.setSize(500, 400);
+        frame.setLocation(50,50);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setLayout(new BorderLayout());
 
