@@ -8,7 +8,7 @@ import try_2.menu.VanillaLatte;
 public class CoffeeProductFactory {
 
     public static CoffeeProduct create(String productName){
-        String normalizedInput = productName.toLowerCase().trim();
+        String normalizedInput = productName.toLowerCase();
         switch (normalizedInput) {
             case "caramel latte":
                 return new CaramelLatte();
